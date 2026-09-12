@@ -1,15 +1,35 @@
 project:
-  title: "Презентация к лабораторной работе № 1"
+  title: "presentation"
   output-dir: "_output"
 
-lang: ru-RU
+standalone: true
+self-contained: true
 slide-level: 2
+lang: ru-RU
 
 format:
-  revealjs:
-    transition: slide
-    slide-number: true
-    theme: beige
   beamer:
+    pdf-engine: lualatex
     aspectratio: 169
-    toc: true
+    toc: false
+    number-sections: false
+    colorlinks: false
+    incremental: false
+    navigation: horizontal
+    section-titles: false
+
+    mainfont: "DejaVu Sans"
+    sansfont: "DejaVu Sans"
+    monofont: "DejaVu Sans Mono"
+
+    latex-auto-install: false
+    latex-tinytex: false
+
+  revealjs:
+    transition: fade
+    margin: 0.12
+    smaller: true
+    slide-number: true
+    theme: simple
+    center: false
+    embed-resources: true
