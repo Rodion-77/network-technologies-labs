@@ -1,20 +1,92 @@
 project:
-  title: "Отчёт по лабораторной работе № 2"
-  output-dir: "_output"
+  type: default
+  output-dir: _output
 
 lang: ru-RU
-number-sections: true
-toc: true
-toc-title: "Содержание"
-toc-depth: 2
+standalone: true
 
 format:
-  docx:
-    toc: true
-    number-sections: true
   pdf:
-    toc: true
-    number-sections: true
-    documentclass: scrreprt
+    pdf-engine: lualatex
+    documentclass: article
     papersize: a4
     fontsize: 12pt
+
+    geometry:
+      - top=20mm
+      - bottom=20mm
+      - left=25mm
+      - right=20mm
+      - headheight=15pt
+      - headsep=10mm
+      - footskip=15mm
+
+    mainfont: "DejaVu Serif"
+    sansfont: "DejaVu Sans"
+    monofont: "DejaVu Sans Mono"
+
+    toc: false
+    lof: false
+    lot: false
+    number-sections: false
+
+    linestretch: 1.15
+    colorlinks: false
+
+    fig-align: center
+    fig-cap-location: bottom
+    fig-pos: H
+
+    latex-auto-install: false
+    latex-tinytex: false
+
+    include-in-header:
+      text: |
+        \usepackage{indentfirst}
+        \usepackage{float}
+        \usepackage{xcolor}
+        \usepackage{colortbl}
+        \usepackage{titlesec}
+        \usepackage{fancyhdr}
+        \usepackage{tabularx}
+        \usepackage{array}
+        \usepackage{booktabs}
+        \usepackage{caption}
+
+        \definecolor{rudnblue}{HTML}{17365D}
+        \definecolor{tableblue}{HTML}{E7EEF6}
+
+        \titleformat{\section}
+          {\Large\bfseries\color{rudnblue}}
+          {}
+          {0pt}
+          {}
+
+        \titleformat{\subsection}
+          {\large\bfseries\color{black}}
+          {}
+          {0pt}
+          {}
+
+        \titlespacing*{\section}{0pt}{18pt}{8pt}
+        \titlespacing*{\subsection}{0pt}{14pt}{6pt}
+
+        \setlength{\parindent}{1.25cm}
+        \setlength{\parskip}{0pt}
+        \setlength{\emergencystretch}{3em}
+
+        \captionsetup{
+          font=small,
+          justification=centering,
+          singlelinecheck=false,
+          labelsep=endash
+        }
+
+        \renewcommand{\figurename}{Рисунок}
+
+        \pagestyle{fancy}
+        \fancyhf{}
+        \fancyfoot[L]{\footnotesize\color{gray}Сетевые технологии \;|\; Павличенко Родион Андреевич}
+        \fancyfoot[R]{\footnotesize\color{gray}\thepage}
+        \renewcommand{\headrulewidth}{0pt}
+        \renewcommand{\footrulewidth}{0pt}

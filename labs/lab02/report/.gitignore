@@ -3,3 +3,6 @@ _output/
 *.log
 *.out
 *.toc
+
+/.quarto/
+**/*.quarto_ipynb

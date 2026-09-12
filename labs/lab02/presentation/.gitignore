@@ -5,3 +5,6 @@ _output/
 *.out
 *.snm
 *.toc
+
+/.quarto/
+**/*.quarto_ipynb
