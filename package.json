@@ -1,9 +1,9 @@
 {
-    "name": "net-os-admin-lab-code",
+    "name": "network-technologies-labs",
     "version": "2.0.3",
     "description": "Code for laboratory works",
     "main": "index.js",
-    "repository": "git@github.com:yamadharma/net-os-admin-lab-code.git",
+    "repository": "git@github.com:yamadharma/network-technologies-labs.git",
     "author": "Dmitry S. Kulyabov <yamadharma@gmail.com>",
     "license": "CC-BY-4.0",
     "config": {
