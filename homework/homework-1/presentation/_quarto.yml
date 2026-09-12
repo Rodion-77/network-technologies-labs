@@ -1,0 +1,35 @@
+project:
+  title: "presentation"
+  output-dir: "_output"
+
+standalone: true
+self-contained: true
+slide-level: 2
+lang: ru-RU
+
+format:
+  beamer:
+    pdf-engine: lualatex
+    aspectratio: 169
+    toc: false
+    number-sections: false
+    colorlinks: false
+    incremental: false
+    navigation: horizontal
+    section-titles: false
+
+    mainfont: "DejaVu Sans"
+    sansfont: "DejaVu Sans"
+    monofont: "DejaVu Sans Mono"
+
+    latex-auto-install: false
+    latex-tinytex: false
+
+  revealjs:
+    transition: fade
+    margin: 0.12
+    smaller: true
+    slide-number: true
+    theme: simple
+    center: false
+    embed-resources: true
