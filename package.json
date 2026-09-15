@@ -1,14 +1,14 @@
 {
-    "name": "network-technologies-labs",
-    "version": "2.0.3",
-    "description": "Code for laboratory works",
-    "main": "index.js",
-    "repository": "git@github.com:yamadharma/network-technologies-labs.git",
-    "author": "Dmitry S. Kulyabov <yamadharma@gmail.com>",
-    "license": "CC-BY-4.0",
+  "name": "nettech",
+  "version": "1.0.0",
+  "description": "Сетевые технологии",
+  "main": "index.js",
+  "repository": "https://gitverse.ru/dharma/course-directory-student-template.git",
+  "author": "rapavlichenko <1132246838@rudn.ru>",
+  "license": "CC-BY-4.0",
     "config": {
 	"commitizen": {
-	    "path": "cz-conventional-changelog"
+	    "path": "cz-customizable"
 	}
     }
 }
